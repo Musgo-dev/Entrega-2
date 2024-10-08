@@ -1,0 +1,169 @@
+/* Fuente importada: Montserrat */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*  Cambios globales de la web  */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  Cambios en el body de la web  */
+
+body {
+    padding: 2%;
+}
+
+/*  Cambios header de la web  */
+
+.cabecera {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding: 5px;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: montserrat;
+}
+
+/*  Cambios en el menu */
+
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    align-content:space-around;
+    gap: 5px;
+    list-style: none;
+    font-family: montserrat;
+    font-size: 16px;
+}
+
+/*  Cambios sección de iconos del header de la web  */
+
+.compra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}   
+
+/*  Cambios en el titulo de la web  */
+
+h1 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    color: #212429;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*  Cambios globales de la sección de los productos de la web  */
+
+.contenedor {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 16px;
+        font-size: 14px;
+        font-family: montserrat;
+        color: #212429;
+        max-width: 1280px;
+      }
+
+/*  Cambios imágenes de la web  */
+
+.articulo {
+    margin: 32px;
+}
+
+.imagen {
+    border-radius: 10px;
+}
+
+/*  Cambios texto debajo de las fotos */
+
+.texto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+/*  Cambios precio  */
+
+
+.precio {
+    text-align: right;
+    font-weight: bold;
+}
+
+/*  Cambios globales footer de la web  */
+
+.inferior {
+    background-color: #212429;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 16px;
+    font-family: montserrat;
+}
+
+/*  Cambios columnas con icono y texto del footer  */
+
+.columnas-footer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    gap: 10px;
+}
+
+/*  Cambios iconos del footer  */
+
+.icono-footer  {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+/*  RESPONSIVE  */
+
+@media screen and (max-width: 920px) {
+    .contenedor  {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inferior  {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .lista {
+        display: none;
+    }
+
+    .compra {
+        display: none;
+    }
+
+    .burger {
+        justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .contenedor {
+      grid-template-columns: 1fr;
+    }
+    .inferior {
+        gap: 20px;
+        grid-template-columns: 1fr;
+      }
+  }
