@@ -69,6 +69,7 @@ h1 {
         font-family: montserrat;
         color: #212429;
         max-width: 1280px;
+        justify-items: center;
       }
 
 /*  Cambios imágenes de la web  */
